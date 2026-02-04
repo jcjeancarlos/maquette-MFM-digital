@@ -36,8 +36,13 @@ section {
 
 .card_MFM {
     flex: 1;
-    margin-top: 90px;
-    height: 96px;    
+    margin-top: 10px;
+    height: 96px;  
+    line-height: 2.5;  
+}
+
+.tel_link { 
+    color: inherit;
 }
 
 .contactez-nous {
@@ -56,11 +61,19 @@ section {
     position: relative;
     display: flex;
     max-width: 312px;
-    max-height: 41px;
+    height: 41px;
     border: 1px solid #ccc;
     background: #fff;
     border-radius: 44px;
     overflow: hidden;
+    margin: 15px;
+    align-items: center; 
+    justify-content: center;
+}
+
+.btn_toggle .icon { 
+    width: 20px; 
+    height: 20px; 
 }
 
 .btn_toggle button {
@@ -68,9 +81,10 @@ section {
     border: none;
     border-radius: 44px;
     max-width: 312px;
-    max-height: 41px;
+    height: 41px;
     padding: 5px;
     background: transparent;
+    transition: background-color 0.45s ease;
     position: relative;
     z-index: 2;
     cursor: pointer;
@@ -81,11 +95,14 @@ section {
     top: 5px; 
     left: 5px; 
     width: calc(50% - 5px); 
-    height: calc(100% - 10px); background: white; border-radius: 50px; 
+    height: calc(100% - 10px); 
+    background: white; 
+    border-radius: 50px; 
     transition: transform 0.9s ease-in-out; z-index: 1; 
 }
 
-.btn_toggle button.btn_active { background-color: rgba(157, 209, 41, 1);
+.btn_toggle button.btn_active { 
+    background-color: rgba(157, 209, 41, 1);
 }
 
 
@@ -102,12 +119,6 @@ section {
     padding: 8px 0;
     background: transparent;
     outline: none;
-    font-size: 16px;
-}
-
-
-input {
-    border: #fff;
     font-size: 18px;
 }
 
@@ -144,3 +155,106 @@ input {
     color: #fff;
     cursor: pointer;
 }
+
+.notif {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #f0f0f0;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.notif.show {
+    opacity: 1;
+}
+
+
+
+
+/* ======== TABLET ======== */
+@media (max-width: 1024px) {
+
+    section {
+        padding: 60px 40px;
+        gap: 50px;
+    }
+
+    .contactez-nous {
+        top: -80px;
+        padding: 40px;
+    }
+
+    .btn_toggle {
+        max-width: 260px;
+        height: 45px;
+        margin: 20px auto;
+    }
+
+    .btn_toggle button {
+        font-size: 14px;
+        height: 45px;
+    }
+        
+}
+
+/* ======== MOBILE ======== */
+@media (max-width: 768px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center; 
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    header img {
+        height: 200px;
+        object-position: center;
+    }
+
+    .contactez-nous {
+        top: 0; 
+        max-width: 80%;
+        padding: 30px 20px;
+    }
+
+    .card_MFM {
+        margin: 40px;
+        line-height: 2;
+    }
+
+    .btn_toggle {
+        max-width: 60%;
+        height: 45px;
+        margin: 20px auto;
+    }
+
+    .btn_toggle button {
+        font-size: 14px;
+        height: 45px;
+    }
+
+    .btn_toggle .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn_envoyer {
+        width: 50%;
+        height: 55px;
+        font-size: 20px;
+    }
+}
+

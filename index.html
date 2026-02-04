@@ -14,7 +14,9 @@
     <section>
         <div class="card_MFM">
                 <h2>MFM DIGITAL<br></h2>
-                Rue Middelbourg 66, 1170 Watermael-Boitsfort<br> +32 2 880 96 92 <br>info@mfmdigital.com<br>
+                <p>Rue Middelbourg 66, 1170 Watermael-Boitsfort<br> 
+                <a href="tel:+3228809692" class="tel_link">+32 2 880 96 92</a>
+                <br>info@mfmdigital.com<br></p>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.792C0 19.506.494 20 1.104 20h9.578v-7.745H8.076V9.237h2.606V7.01c0-2.584 1.578-3.99 3.883-3.99c1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.596-1.496 1.47v1.927h2.989l-.39 3.018h-2.6V20h5.097c.61 0 1.104-.494 1.104-1.104V1.104C20 .494 19.506 0 18.896 0"/></svg> 
                 </span>
@@ -34,12 +36,30 @@
 
             <div class="btn_toggle">
                 <div class="slider"></div>
-                <button type= "button" class="btn_active">LORD OF THE RINGS</button>
-                <button type="button">HARRY POTTER</button>  
+
+                    <button type="button" class="btn_active">
+                        <svg class="icon" width="10" height="10" viewBox="-3 -3 30 18" fill="none">
+
+                            <circle cx="12" cy="12" r="8" stroke="black" stroke-width="2"/>
+
+                        </svg>
+                        LORD OF RINGS
+                    </button>
+
+                    <button type="button">
+                        <svg class="icon" width="10" height="10" viewBox="-3 -3 30 18" fill="none">
+
+                            <circle cx="7" cy="14" r="4" stroke="black" stroke-width="2"/>
+                            <circle cx="17" cy="14" r="4" stroke="black" stroke-width="2"/>
+                            <line x1="11" y1="14" x2="13" y2="14" stroke="black" stroke-width="2"/>
+                            <path d="M12 2 L10.5 5.5 H13.5 Z" fill="black"/>
+
+                        </svg>
+                        HARRY POTTER
+                    </button>
             </div>
-            
+
             <form action="#" method="post">
-                
                 <div class="row">
                     <div class="form">
                         <label for="nom">Nom*</label>
@@ -84,7 +104,10 @@
                         J’accepte que mes données soient protégées par Gandalf et vérifiées par le Ministère de la Magie.
                 </label>
 
-                <button type= "submit" class="btn_envoyer">ENVOYER
+                <div id="notif" class="notif"></div>
+
+                <button type= "submit" class="btn_envoyer">
+                    ENVOYER
                 </button>
             </form>
         </div>
