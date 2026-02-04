@@ -177,6 +177,11 @@ section {
 /* ======== TABLET ======== */
 @media (max-width: 1024px) {
 
+
+    body {
+        background-color: #fff;
+    }
+
     section {
         padding: 60px 40px;
         gap: 50px;
@@ -231,13 +236,13 @@ section {
     }
 
     .btn_toggle {
-        max-width: 60%;
+        max-width: 85%;
         height: 45px;
         margin: 20px auto;
     }
 
     .btn_toggle button {
-        font-size: 14px;
+        font-size: 10px;
         height: 45px;
     }
 
