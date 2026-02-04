@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0;
+    justify-content: center;
+    background-color: #000000
+}
+
+header img {
+    width: 100%; 
+    max-width: 1440px; 
+    height: 374px; 
+    object-fit: cover; 
+    display: block; 
+    margin: 0 auto;
+}
+
+section {
+    background-color: #fff;
+    max-width: 1440px;
+    display: flex;
+    gap: 64px;
+    padding: 75px 205px;
+    margin: auto;
+}
+
+.card_MFM {
+    flex: 1;
+    margin-top: 90px;
+    height: 96px;    
+}
+
+.contactez-nous {
+    flex: 2;
+    position: relative; 
+    top: -170px;
+    max-width: 584px;
+    max-height: 875px;
+    background-color: #fff;
+    padding: 48px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 28px 0px rgba(28, 133, 166, 0.13);
+}
+
+.btn_toggle {
+    position: relative;
+    display: flex;
+    max-width: 312px;
+    max-height: 41px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 44px;
+    overflow: hidden;
+}
+
+.btn_toggle button {
+    flex: 1;
+    border: none;
+    border-radius: 44px;
+    max-width: 312px;
+    max-height: 41px;
+    padding: 5px;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.btn_toggle .slider { 
+    position: absolute; 
+    top: 5px; 
+    left: 5px; 
+    width: calc(50% - 5px); 
+    height: calc(100% - 10px); background: white; border-radius: 50px; 
+    transition: transform 0.9s ease-in-out; z-index: 1; 
+}
+
+.btn_toggle button.btn_active { background-color: rgba(157, 209, 41, 1);
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.form input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+
+input {
+    border: #fff;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    margin: 15px;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.checkbox input[type="checkbox"] { 
+    accent-color: rgba(157, 209, 41, 1);
+    box-shadow: 0px 2px 2px 2px #0000002f;
+}
+
+.btn_envoyer {
+    width: 198px;
+    height: 57px;
+    padding: 12px;
+    border: none;
+    border-radius: 44px;
+    display: block; 
+    margin: 0 auto;
+    background-color: rgba(157, 209, 41, 1);
+    font-weight: 700; 
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
